@@ -18,10 +18,14 @@ body{
   font-weight: 600;
 }
 header{
+  background: white;
   display: flex;
   justify-content: space-between;
   padding: 2rem 1rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+header.dark-mode{
+  background: var(--Dark-Blue);
 }
 header .logo{
   color: var(--Very-Dark-Blue);
@@ -29,12 +33,20 @@ header .logo{
   font-weight: 800;
   text-decoration: none;
 }
+header.dark-mode .logo{
+  color: var(--White);
+}
 header .toggle-theme{
+  color: var(--Very-Dark-Blue);
   display: flex;
   align-items: center;
   gap: .5rem;
   cursor: pointer;
 }
+header.dark-mode .toggle-theme{
+  color: var(--White);
+}
+
 @media(min-width: 650px){
   body{
     font-size: 1rem;

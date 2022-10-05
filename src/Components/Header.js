@@ -1,12 +1,11 @@
-export default function Header(){
+export default function Header(props){
     return(
-        <header>
+        <header className={props.darkMode ? 'dark-mode' : ''}>
             <a href="#" className="logo">Where in the world?</a>
-            <div className="toggle-theme">
-                <span><i class="fa-regular fa-moon"></i></span>
-                <span>Dark Mode</span>
+            <div className="toggle-theme" onClick={props.toggleDarkMode}>
+                <span>{props.darkMode ? <i class="fa-regular fa-moon"></i> : <i class="fa-regular fa-sun"></i>}</span>
+                <span>{props.darkMode ? "Dark Mode":"Light Mode"}</span>
             </div>
         </header>
     )
 }
-{/* <i class="fa-regular fa-sun"></i> */}
