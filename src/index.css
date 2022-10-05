@@ -4,7 +4,53 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root{
+  --Dark-Blue: hsl(209, 23%, 22%);
+  --Very-Dark-Blue: hsl(207, 26%, 17%);
+  --Very-Dark-Blue: hsl(200, 15%, 8%);
+  --Dark-Gray: hsl(0, 0%, 52%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
 body{
   font-size: 14px;
   font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+header .logo{
+  color: var(--Very-Dark-Blue);
+  font-size: 1rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+header .toggle-theme{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  cursor: pointer;
+}
+@media(min-width: 650px){
+  body{
+    font-size: 1rem;
+  }
+  header{
+    padding: 2rem 3rem;
+  }
+  header .logo{
+    font-size: 1.25rem;
+  }
+}
+@media(min-width: 1200px){
+  header{
+    padding: 2rem 5rem;
+  }
+  header .logo{
+    font-size: 1.5rem;
+  }
 }
