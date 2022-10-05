@@ -3,8 +3,8 @@ export default function Header(props){
         <header className={props.darkMode ? 'dark-mode' : ''}>
             <a href="#" className="logo">Where in the world?</a>
             <div className="toggle-theme" onClick={props.toggleDarkMode}>
-                <span>{props.darkMode ? <i class="fa-regular fa-moon"></i> : <i class="fa-regular fa-sun"></i>}</span>
-                <span>{props.darkMode ? "Dark Mode":"Light Mode"}</span>
+                <span>{props.darkMode ? <i class="fa-regular fa-sun"></i> : <i class="fa-regular fa-moon"></i>}</span>
+                <span>{props.darkMode ? "Light Mode":"Dark Mode"}</span>
             </div>
         </header>
     )
