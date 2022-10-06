@@ -13,7 +13,7 @@ export default function App(){
     <div className='container'>
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <main>
-        <Home />
+        <Home darkMode={darkMode} />
         <Detail darkMode={darkMode} />
       </main>
     </div>

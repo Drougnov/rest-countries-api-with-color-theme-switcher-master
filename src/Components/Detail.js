@@ -1,5 +1,7 @@
-export default function Detail(){
+export default function Detail(props){
     return(
-        <p>This is detail.</p>
+        <div className={props.darkMode ? "dark-mode detail":"detail"}>
+            <p>This is detail</p>
+        </div>
     )
 }
